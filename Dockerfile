@@ -5,9 +5,11 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR /app
 
-COPY requirements /app
-COPY django_app /app 
+COPY requirements.txt /app
+COPY ./django_app /app 
 
 RUN pip3 install -r requirements.txt
 
-CMD ["python3", "manage.py runserver"]
+EXPOSE 8000
+ENTRYPOINT [ "python3" ]
+CMD ["manage.py", "runserver", "0.0.0.0:8000"]
