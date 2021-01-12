@@ -14,7 +14,7 @@ SECRET_KEY = '*r&dssg9qol5f50xqr0040_-+gn1bu&w@*vvr5!k^6929+0n93'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['uptrader.herokuapp.com']
 
 
 # Application definition
