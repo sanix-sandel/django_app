@@ -3,7 +3,7 @@ build:
     web: Dockerfile
 release:
   image: django_app
-command:
-  - python3 manage.py collectstatic --noinput
+  command:
+    - python3 manage.py collectstatic --noinput
 run:
   web: gunicorn django_app.wsgi
