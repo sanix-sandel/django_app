@@ -2,7 +2,7 @@ build:
   docker:
     web: Dockerfile
 release:
-  image: django_app
+  image: web
   command:
     - python3 manage.py collectstatic --noinput
 run:
